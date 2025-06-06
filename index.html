@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dra. Laura Martínez | Clínica Salud Vida</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f7fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #0a74da;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2.2rem;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    .perfil {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+      background-color: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .perfil img {
+      width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+    }
+
+    .info-doctora {
+      flex: 1;
+    }
+
+    .info-doctora h2 {
+      color: #0a74da;
+      margin-bottom: 10px;
+    }
+
+    .info-doctora p {
+      line-height: 1.6;
+    }
+
+    .galeria {
+      margin-top: 40px;
+    }
+
+    .galeria h3 {
+      color: #0a74da;
+      margin-bottom: 20px;
+    }
+
+    .galeria img {
+      width: 220px;
+      border-radius: 12px;
+      margin: 10px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    .botones {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 50px;
+    }
+
+    .botones a {
+      background-color: #0a74da;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .botones a:hover {
+      background-color: #084c8a;
+      transform: translateY(-4px);
+    }
+
+    footer {
+      background-color: #0a74da;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+</style>
+
+<header>
+  <h1>Dra. Laura Martínez</h1>
+  <p>Médica General | Clínica Salud Vida</p>
+</header>
+<style>
+  .perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    background: linear-gradient(to right, #e0f7fa, #a5d6a7); /* Gradiente de azul claro a verde claro */
+    border: 2px dashed #4CAF50;
+    border-radius: 12px;
+    margin: 20px;
+  }
+
+  .perfil img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #4CAF50;
+  }
+
+  .info-doctora {
+    max-width: 600px;
+  }
+</style>
+<style>
+  .perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    background: linear-gradient(to right, #e0f7fa, #a5d6a7);
+    border: 2px dashed #4CAF50;
+    border-radius: 12px;
+    margin: 20px;
+
+    /* Animación */
+    animation: movimiento-lado-arriba 4s ease-in-out infinite alternate;
+  }
+
+  @keyframes movimiento-lado-arriba {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(20px, -10px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+</style>
+
+<main>
+  <section class="perfil">
+    <img src="foto.jpg" alt="Doctora">
+    <div class="info-doctora"
+      <h2>Sobre la Doctora</h2>
+      <p>La Dra. Laura Martínez es una médica general con más de 10 años de experiencia en el cuidado integral de pacientes. Con un enfoque humano y profesional, brinda servicios de atención primaria, diagnósticos y asesoramiento en salud preventiva.</p>
+      <p>Especializada en medicina familiar, ofrece consultas tanto en consultorio como a domicilio, priorizando el bienestar y la confianza de sus pacientes.</p>
+    </div>
+  </section>
+</style>
+<section class="galeria">
+ <style>
+  .galeria {
+    padding: 30px;
+    background: linear-gradient(to bottom, #ffffff, #e8f5e9);
+    text-align: center;
+  }
+
+  .galeria img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border: 10px solid transparent;
+
+    /* Borde con imagen */
+    border-image: url('borde.png') 30 round; /* Reemplaza 'borde.png' con tu URL */
+
+    /* Sombra negra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  .galeria img:hover {
+    transform: scale(1.05);
+  }
+</style>
+<style>
+  .galeria {
+    padding: 30px;
+    background: linear-gradient(to bottom, #ffffff, #e8f5e9);
+    text-align: center;
+  }
+
+  .galeria img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border: 10px solid transparent;
+
+    /* Borde con imagen */
+    border-image: url(miforma03.png) 30 round; /* Reemplaza 'borde.png' con tu URL */
+
+    /* Sombra negra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  .galeria img:hover {
+    transform: scale(1.05);
+  }
+</style>
+<style>
+  .galeria img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 8px;
+    transition: filter 0.4s ease, transform 0.4s ease;
+    
+    /* Filtro inicial: desenfoque ligero + brillo reducido */
+    filter: blur(2px) brightness(0.8);
+  }
+
+  .galeria img:hover {
+    /* Al pasar el cursor, quita el desenfoque y aumenta brillo y saturación */
+    filter: blur(0) brightness(1.1) saturate(1.2);
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+</style>
+
+</section>
+<section class="galeria">
+    <h3>Galería Profesional</h3>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+      <img src="imagen 4.webp" alt="Consultorio 1">
+      <img src="imagen 3.jpg" alt="Consulta médica">
+      <img src="imagen 1.jpg" alt="Doctora atendiendo">
+      <img src="imagen 6.jpg" alt="Equipo médico">
+    </div>
+  </section>
+  <style>
+  .boton-3d {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    /* Para el efecto 3D */
+    perspective: 600px;
+  }
+
+  .boton-3d:hover {
+    /* Aplicamos transformación 3D al botón */
+    transform: rotateX(15deg) rotateY(15deg) translateZ(10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  }
+
+  /* Para que la transformación 3D se aplique bien */
+  .boton-3d:focus {
+    outline: none;
+  }
+</style>
+
+<button class="boton-3d">Presionar</button>
+
+  <div class="botones">
+    <a href="informacion.html">Información</a>
+
+    <a href="servicios.html">Servicios</a>
+    <a href="contactos.html">Contacto</a>
+  </div>
+</main>
+<style>
+  footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    
+    /* Perspectiva aplicada */
+    perspective: 600px; /* Define la profundidad para elementos hijos */
+  }
+
+  footer p {
+    display: inline-block;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+  }
+
+  footer:hover p {
+    /* Inclinación y leve movimiento en 3D al pasar el cursor */
+    transform: rotateX(10deg) rotateY(15deg) translateZ(20px);
+  }
+</style>
+
+<footer>
+  <p>&copy; 2025 Clínica Salud Vida. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

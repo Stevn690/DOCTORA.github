@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dra. Laura Martínez</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #eaf6f9;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0a74da, #0653a6);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 4px solid #0e3d77;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    section {
+      background-color: white;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      color: #0a74da;
+      margin-bottom: 15px;
+    }
+
+    .cube-container {
+      width: 220px;
+      height: 220px;
+      margin: 0 auto 40px;
+      perspective: 1000px;
+    }
+
+    .cube {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transform: rotateX(0deg) rotateY(0deg);
+      transition: transform 10s linear;
+    }
+
+    .cube-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .cube-face img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .front  { transform: translateZ(110px); }
+    .back   { transform: rotateY(180deg) translateZ(110px); }
+    .right  { transform: rotateY(90deg) translateZ(110px); }
+    .left   { transform: rotateY(-90deg) translateZ(110px); }
+    .top    { transform: rotateX(90deg) translateZ(110px); }
+    .bottom { transform: rotateX(-90deg) translateZ(110px); }
+
+    body:hover .cube {
+      transform: rotateY(720deg) rotateX(360deg);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0a74da;
+      color: white;
+      margin-top: 40px;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dra. Laura Martínez</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contactos.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="cube-container">
+      <div class="cube">
+        <div class="cube-face front"><img src="foto.jpg" alt="Frente"></div>
+        <div class="cube-face back"><img src="foto.jpg" alt="Atrás"></div>
+        <div class="cube-face right"><img src="foto.jpg" alt="Derecha"></div>
+        <div class="cube-face left"><img src="imagen 1.jpg" alt="Izquierda"></div>
+        <div class="cube-face top"><img src="foto.jpg" alt="Arriba"></div>
+        <div class="cube-face bottom"><img src="imagen 1.jpg" alt="Abajo"></div>
+      </div>
+    </div>
+    <style>
+  section {
+    border: 2px dashed #4CAF50; /* Puedes cambiar el color y grosor */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Opcional, para esquinas redondeadas */
+  }
+</style>
+
+    <section id="home">
+      <h2>Bienvenidos a la consulta de la Dra. Laura</h2>
+      <p>La Dra. Laura Martínez es una profesional con más de 12 años de experiencia en medicina general y familiar. Comprometida con tu bienestar, su atención combina tecnología, empatía y un diagnóstico preciso para cuidar de ti y tu familia.</p>
+    </section>
+
+    <section id="about">
+      <h2>Acerca de la Doctora</h2>
+      <p>Graduada con honores en la Universidad Central, la Dra. Martínez se ha capacitado en atención primaria, salud preventiva y medicina interna. Su consultorio ofrece un ambiente cálido, moderno y seguro.</p>
+      <ul>
+        <li>Medicina familiar</li>
+        <li>Chequeos generales</li>
+        <li>Consultas pediátricas y geriátricas</li>
+        <li>Control de enfermedades crónicas</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contacto</h2>
+      <p>Agenda tu cita o realiza consultas:</p>
+      <ul>
+        <li>Email: <a href="mailto:dra.lauramartinez@gmail.com">dra.lauramartinez@gmail.com</a></li>
+        <li>Teléfono: 0991234567</li>
+        <li>Dirección: Av. Salud y Vida #101, Quito</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dra. Laura Martínez. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
